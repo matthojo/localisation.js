@@ -114,6 +114,7 @@ var localisation = function(content, json){
             // Add title option
             var option = document.createElement("option");
             option.text = titleText;
+            option.value = "auto";
             selectBox.options.add(option);
 
             // Create options
