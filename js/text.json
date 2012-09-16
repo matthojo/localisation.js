@@ -1,0 +1,16 @@
+{
+    "en_GB": {
+        "language_name": "English",
+        "welcome": "Hello!"
+    },
+    "en_US": {
+        "language_name": "US English",
+        "welcome": "Hey there!"
+    },
+    "cy": {
+	    "welcome": "Croeso!"
+    },
+    "fr":{
+	    "welcome": "Bonjour!"
+    }
+}

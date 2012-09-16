@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Localisation.js</title>
+    <style>
+        body {
+            background-color: #FFF;
+            margin: 0px;
+            overflow: hidden;
+            font-family: monospace;
+            font-size:13px;
+            text-align:center;
+            font-weight: bold;
+            text-align:center;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/localisation.js"></script>
+    <script>
+        var json = {
+            "en_GB": {
+                "language_name": "English",
+                "welcome": "Hello!"
+            },
+            "en_US": {
+                "welcome": "Hey there!"
+            },
+            "cy": {
+                "welcome": "Croeso!"
+            },
+            "fr":{
+                "welcome": "Bonjour!"
+            }
+        };
+        var language = new localisation("js/text.json", false);
+        // var language = new localisation(json, true);
+        language.setLanguage("en_GB");
+    </script>
+</head>
+<body>
+
+    <div id="container">
+        <div id="form_container"></div>
+        <h1 class="text"></h1>
+    </div>
+
+</body>
+<script>
+    language.createLanguageChooser("form", "Choose Language", false, "form_container");
+
+    // DEBUGGING
+    $("body").on('change', '.form', function() {
+        var val = $(".form").val();
+        language.setLanguage(val);
+        $(".text").text(language.returnString("welcome"));
+    });
+</script>
+</html>
