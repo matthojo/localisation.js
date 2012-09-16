@@ -1,6 +1,11 @@
 Localisation.js
 ========
 
+Author: Matthew Harrison-Jones
+Website: [matthojo.co.uk](http://matthojo.co.uk)
+Twitter: [@matt_hojo](http://twitter.com/matt_hojo)
+License: MIT
+
 #### What does it do?
 
 It allows you to localise your websites content, simply by specifying your language content in JSON format. 
@@ -44,8 +49,9 @@ language.returnString("welcome")
 replacing 'welcome' with your required text key name.
 
 ### Generating a language drop down
-There is also the ability to create a drop down box with only the languages supported in your JSON visible.
+There is also the ability to create a drop down box containing only the languages supported in your JSON.
 You can either specify a parent for the drop down to go into, or create a drop down where the script is called.
+
 This appends to a container called 'form_container' and has a class of 'form'. The 'false' says its not near the script.
 ```javascript
 language.createLanguageChooser("form", "Choose Language", false, "form_container");
