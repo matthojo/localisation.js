@@ -1,10 +1,10 @@
 Localisation.js
 ========
 
-Author: Matthew Harrison-Jones
-Website: [matthojo.co.uk](http://matthojo.co.uk)
-Twitter: [@matt_hojo](http://twitter.com/matt_hojo)
-License: MIT
+* Author: Matthew Harrison-Jones
+* Website: [matthojo.co.uk](http://matthojo.co.uk)
+* Twitter: [@matt_hojo](http://twitter.com/matt_hojo)
+* License: MIT
 
 #### What does it do?
 
